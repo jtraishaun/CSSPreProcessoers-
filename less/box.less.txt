@@ -1,0 +1,25 @@
+@import "mixins";
+@import "var";
+
+div {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div > div:nth-child(1) {
+    .box(100px, 100px, @red);
+}
+
+div > div:nth-child(2) {
+    .box(200px, 200px, @blue);
+}
+
+div > div:nth-child(3) {
+    .box(250px, 250px, @green);
+}
+
+div > div:nth-child(4) {
+    .box(50px, 50px, @purple);
+}
